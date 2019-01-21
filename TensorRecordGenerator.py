@@ -120,7 +120,7 @@ def addTestData(test_addrs, test_labels):
     sys.stdout.flush()
 
 
-def generateTestData(path='../trainSet1/constQSpectrograms/*.png'):
+def generateTestData(path=('../trainSet1/constQSpectrograms/*.png')):
     shuffle_data = False  # shuffle the addresses before saving
     spectrograms_test_path = path
     # read addresses and labels from the 'train' folder
@@ -152,8 +152,8 @@ def generateTestData(path='../trainSet1/constQSpectrograms/*.png'):
 
 
 
-generateTrainData(('../trainSet5/constQSpectrograms/*.png', '../trainSet6/constQSpectrograms/*.png', '../trainSet7/constQSpectrograms/*.png', '../trainSet8/constQSpectrograms/*.png', '../trainSet9/constQSpectrograms/*.png'))#, '../trainSet6/pseudoQSpectrograms/*.png'))
-generateTestData('../trainSet10/constQSpectrograms/*.png')
+generateTrainData(path=('../trainSet5/constQSpectrograms/*.png', '../trainSet6/constQSpectrograms/*.png', '../trainSet7/constQSpectrograms/*.png', '../trainSet8/constQSpectrograms/*.png', '../trainSet9/constQSpectrograms/*.png','../trainSet10/constQSpectrograms/*.png'))#, '../trainSet6/pseudoQSpectrograms/*.png'))
+generateTestData(path='../trainSet11/constQSpectrograms/*.png')
 
 #generateTrainData()
 
